@@ -8,7 +8,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class ConnectionBd {
-    private String ip= "172.27.108.227";
+    private String ip= "192.168.1.37";
 private String usuario = "sa";
 private String password="1234";
     private String basedatos ="Login";
