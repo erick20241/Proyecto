@@ -1,5 +1,4 @@
 package com.example.mycal;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -8,15 +7,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
 import com.example.mycal.conexion.ConnectionBd;
-
+import java.sql.DriverManager;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
@@ -30,7 +27,7 @@ Connection con;
 
 public Registro(){
     ConnectionBd instanceConnection = new ConnectionBd();
-    con=instanceConnection.connect();
+    con = instanceConnection.connect();
 }
 
 
@@ -58,7 +55,7 @@ public Registro(){
         ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent ingresar=new Intent(getApplicationContext(), LoginActivity.class);
+                Intent ingresar = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(ingresar);
             }
         });
@@ -74,7 +71,7 @@ public Registro(){
 
         }
         else {
-            PreparedStatement stm=con.prepareStatement( "INSERT INTO USUARIO VALUES(?,?,?,?)");
+            PreparedStatement stm=con.prepareStatement( "INSERT INTO Usuarios VALUES(?,?,?,?,?)");
           stm.setString(1,nomapellidos.getText().toString());
           stm.setString(2,email.getText().toString());
           stm.setString(3,telefono.getText().toString());
@@ -83,7 +80,7 @@ public Registro(){
 
 
          stm.executeUpdate();
-            Toast.makeText(Registro.this, "rEGISTRO AGREGADO Correctamente", Toast.LENGTH_SHORT).show();
+            Toast.makeText(Registro.this, "REGISTRO AGREGADO Correctamente", Toast.LENGTH_SHORT).show();
 
             nomapellidos.setText("");
             email.setText("");

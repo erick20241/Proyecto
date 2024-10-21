@@ -81,12 +81,12 @@
         android:id="@+id/editTFecha"
         android:layout_width="153dp"
         android:layout_height="39dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Fecha"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintHorizontal_bias="0.895"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -95,12 +95,12 @@
         android:layout_width="153dp"
         android:layout_height="39dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Equipo"
         android:inputType="text"
         app:layout_constraintEnd_toStartOf="@+id/editTFecha"
-        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintHorizontal_bias="0.344"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -108,7 +108,7 @@
         android:id="@+id/edit_peso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="84dp"
         android:ems="10"
         android:hint="Peso"
         android:inputType="text"
@@ -204,7 +204,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintBottom_toTopOf="@+id/btn_enviar_datos"
         app:layout_constraintEnd_toStartOf="@+id/resultado_porcentaje"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -223,11 +223,11 @@
         app:layout_constraintTop_toBottomOf="@+id/sumar_control" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btn_enviar_datos"
         android:layout_width="126dp"
         android:layout_height="51dp"
         android:layout_marginStart="28dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="68dp"
         android:text="Enviar a Bd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -240,9 +240,9 @@
         android:text="Generar Reporte"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.548"
-        app:layout_constraintStart_toEndOf="@+id/button7"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toEndOf="@+id/btn_enviar_datos"
         app:layout_constraintTop_toBottomOf="@+id/resultado_porcentaje"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.619" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
