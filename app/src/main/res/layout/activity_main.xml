@@ -226,23 +226,33 @@
         android:id="@+id/btn_enviar_datos"
         android:layout_width="126dp"
         android:layout_height="51dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="68dp"
+        android:layout_marginTop="80dp"
         android:text="Enviar a Bd"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/button8"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <Button
         android:id="@+id/button8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="44dp"
         android:text="Generar Reporte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultado_porcentaje" />
+
+    <Button
+        android:id="@+id/btnLimp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Limpiar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.528"
-        app:layout_constraintStart_toEndOf="@+id/btn_enviar_datos"
-        app:layout_constraintTop_toBottomOf="@+id/resultado_porcentaje"
-        app:layout_constraintVertical_bias="0.619" />
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
